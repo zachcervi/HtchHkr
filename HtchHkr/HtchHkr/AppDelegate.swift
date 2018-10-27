@@ -17,11 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-//        containerVC = ContainerVC()
+        containerVC = ContainerVC()
 
-//
-//        window?.rootViewController = containerVC
-//        window?.makeKeyAndVisible()
+
+        window?.rootViewController = containerVC
+        window?.makeKeyAndVisible()
         
         
         return true
