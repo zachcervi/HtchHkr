@@ -19,6 +19,8 @@
 		5E6C6C5A217AD6A50004DFE0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C6C59217AD6A50004DFE0 /* CircleView.swift */; };
 		5E6C6C5C217AD80B0004DFE0 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C6C5B217AD80B0004DFE0 /* RoundedShadowButton.swift */; };
 		5E7D8A0F21851A51008AA98B /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D8A0E21851A51008AA98B /* UIViewExt.swift */; };
+		5E7D8A11218522BF008AA98B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D8A10218522BF008AA98B /* LoginVC.swift */; };
+		5E7D8A1321852434008AA98B /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D8A1221852434008AA98B /* RoundedCornerTextField.swift */; };
 		5EF5716B218015C7009E2F22 /* LeftSidePanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5716A218015C7009E2F22 /* LeftSidePanelVC.swift */; };
 		5EF5716D21801682009E2F22 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5716C21801682009E2F22 /* ContainerVC.swift */; };
 		5EF5717021801958009E2F22 /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5716F21801958009E2F22 /* CenterVCDelegate.swift */; };
@@ -38,6 +40,8 @@
 		5E6C6C59217AD6A50004DFE0 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		5E6C6C5B217AD80B0004DFE0 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		5E7D8A0E21851A51008AA98B /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		5E7D8A10218522BF008AA98B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		5E7D8A1221852434008AA98B /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
 		5EF5716A218015C7009E2F22 /* LeftSidePanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePanelVC.swift; sourceTree = "<group>"; };
 		5EF5716C21801682009E2F22 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 		5EF5716F21801958009E2F22 /* CenterVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterVCDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 				5E6C6C57217AD59F0004DFE0 /* RoundedShadowView.swift */,
 				5E6C6C59217AD6A50004DFE0 /* CircleView.swift */,
 				5E6C6C5B217AD80B0004DFE0 /* RoundedShadowButton.swift */,
+				5E7D8A1221852434008AA98B /* RoundedCornerTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 				5E6C6C40217974B60004DFE0 /* HomeVC.swift */,
 				5EF5716A218015C7009E2F22 /* LeftSidePanelVC.swift */,
 				5EF5716C21801682009E2F22 /* ContainerVC.swift */,
+				5E7D8A10218522BF008AA98B /* LoginVC.swift */,
 			);
 			name = Controller;
 			path = "New Group";
@@ -278,6 +284,7 @@
 			files = (
 				5EF5717021801958009E2F22 /* CenterVCDelegate.swift in Sources */,
 				5E6C6C5C217AD80B0004DFE0 /* RoundedShadowButton.swift in Sources */,
+				5E7D8A11218522BF008AA98B /* LoginVC.swift in Sources */,
 				5EF5716B218015C7009E2F22 /* LeftSidePanelVC.swift in Sources */,
 				5E6C6C5A217AD6A50004DFE0 /* CircleView.swift in Sources */,
 				5EF5716D21801682009E2F22 /* ContainerVC.swift in Sources */,
@@ -285,6 +292,7 @@
 				5E6C6C56217AD48D0004DFE0 /* RoundedImageView.swift in Sources */,
 				5E6C6C41217974B60004DFE0 /* HomeVC.swift in Sources */,
 				5E6C6C58217AD59F0004DFE0 /* RoundedShadowView.swift in Sources */,
+				5E7D8A1321852434008AA98B /* RoundedCornerTextField.swift in Sources */,
 				5E6C6C3F217974B60004DFE0 /* AppDelegate.swift in Sources */,
 				5E6C6C54217AC3B20004DFE0 /* GradientView.swift in Sources */,
 			);
