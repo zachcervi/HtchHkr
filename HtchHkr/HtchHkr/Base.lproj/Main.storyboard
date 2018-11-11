@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -283,22 +283,81 @@
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="signUpLoginPressed:" destination="l9C-9g-WMb" eventType="touchUpInside" id="Aln-9i-eB3"/>
+                                    <action selector="signUpLoginPressed:" destination="l9C-9g-WMb" eventType="touchUpInside" id="fPO-qX-iU4"/>
                                     <action selector="signUpLoginPressed:" destination="Use-GW-hzi" eventType="touchUpInside" id="ofE-MW-ER8"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vYc-es-Pdx">
+                                <rect key="frame" x="20" y="387" width="200" height="180"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="wmA-I7-Uad">
+                                        <rect key="frame" x="0.0" y="0.0" width="154.5" height="57"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cfN-wC-nHb">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchWasToggled:" destination="l9C-9g-WMb" eventType="valueChanged" id="FZb-gw-aSV"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="PICKUP MODE ENABLED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Alu-lK-fPU">
+                                                <rect key="frame" x="0.0" y="47" width="154.5" height="10"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="154.5" id="BAv-lH-IEa"/>
+                                            <constraint firstAttribute="height" constant="57" id="eL8-yC-7dr"/>
+                                        </constraints>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noProfilePhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Ldk-mL-hwv" customClass="RoundedImageView" customModule="HtchHkr" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="67" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RiG-J8-C39"/>
+                                            <constraint firstAttribute="width" constant="50" id="Ukz-If-FWf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email@google.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hN-y8-EjX">
+                                        <rect key="frame" x="0.0" y="127" width="151" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACCOUNT TYPE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xrw-VD-Bvs">
+                                        <rect key="frame" x="0.0" y="160.5" width="106" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="gfM-uV-qmW"/>
+                                    <constraint firstAttribute="height" constant="180" id="mEE-bw-byr"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5ww-JC-gZf" firstAttribute="top" secondItem="q4c-ju-tjV" secondAttribute="bottom" constant="20" id="1Pw-3W-Qf1"/>
                             <constraint firstItem="73r-wW-owr" firstAttribute="leading" secondItem="nVZ-tS-ZPU" secondAttribute="leadingMargin" id="7DV-wI-pID"/>
+                            <constraint firstItem="vYc-es-Pdx" firstAttribute="leading" secondItem="nVZ-tS-ZPU" secondAttribute="leading" constant="20" id="EwU-jd-CRI"/>
                             <constraint firstAttribute="trailing" secondItem="Ivq-Bw-EKD" secondAttribute="trailing" id="PRM-Xj-7xv"/>
                             <constraint firstItem="q4c-ju-tjV" firstAttribute="leading" secondItem="nVZ-tS-ZPU" secondAttribute="leadingMargin" id="f6R-Kk-1QB"/>
                             <constraint firstItem="Ivq-Bw-EKD" firstAttribute="leading" secondItem="nVZ-tS-ZPU" secondAttribute="leading" id="hhR-0b-dWP"/>
                             <constraint firstItem="73r-wW-owr" firstAttribute="top" secondItem="Ivq-Bw-EKD" secondAttribute="bottom" constant="23" id="kPb-Jb-oFz"/>
                             <constraint firstItem="Ivq-Bw-EKD" firstAttribute="top" secondItem="nVZ-tS-ZPU" secondAttribute="top" id="tfa-nR-N2y"/>
+                            <constraint firstAttribute="bottom" secondItem="vYc-es-Pdx" secondAttribute="bottom" constant="100" id="x47-uA-79S"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginOutBtn" destination="q4c-ju-tjV" id="kW8-Zz-Dnt"/>
+                        <outlet property="pickupModeLbl" destination="Alu-lK-fPU" id="YXN-fV-qFO"/>
+                        <outlet property="pickupModeSwitch" destination="cfN-wC-nHb" id="iaw-Le-LDs"/>
+                        <outlet property="userAccountTypeLbl" destination="Xrw-VD-Bvs" id="ZL3-0w-IIG"/>
+                        <outlet property="userEmailLbl" destination="0hN-y8-EjX" id="wYI-wk-oNZ"/>
+                        <outlet property="userImageView" destination="Ldk-mL-hwv" id="vm1-lP-oRt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ka8-Pq-GDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Use-GW-hzi" userLabel="Exit" sceneMemberID="exit"/>
